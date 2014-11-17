@@ -1,0 +1,88 @@
+html {
+    background: url(toledobyn2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.contenedor {
+   width: 100%;
+   max-width: 1600px;
+   height: 800px;
+   overflow: hidden;
+   margin: 0 auto;
+}
+nav{
+   float: left;
+   width: 95%;
+   font-family: 'Francois One', sans-serif;
+   font-weight: bold;
+   font-size: 100%;
+   color: white;
+   text-align: right;
+}
+nav li{
+   font-family: 'Francois One', sans-serif;
+   display: inline-block;
+   margin: 5px;
+   padding: 5px;
+   box-sizing: border-box;
+   text-shadow: 0 0 15px black;
+}
+a:link {   text-decoration:none; color:#FFFFFF;}
+a:visited {   color:#FFFFFF; text-decoration:none;}
+a:active {   color:#FFFFFF; text-decoration:none;}
+nav li:hover {transition-duration: 0.5s; text-decoration: overline;}
+
+.titulo {
+   display: block;
+   width: 100%;
+   font-family: 'Francois One', sans-serif;
+   color: #3EA5FF;
+   font-size: 100px;
+   text-align: center;
+   font-weight: bold;
+   text-shadow: 0 0 15px black;
+   margin-top: 19%;
+   margin-bottom: 1%;
+}
+.subtitulo{
+   margin: 0 auto;
+   display: block;
+   width: 50%;
+   margin-bottom: 1%;
+   font-family: 'Francois One', sans-serif;
+   font-size: 25px;
+   text-align: center;
+   font-weight: ;
+   line-height: 30px;
+   color: white;
+   text-shadow: 0 0 15px black;
+}
+button{
+   margin-top: 3%;
+   width: 30%;
+   font-family: 'Francois One', sans-serif;
+   color:white;
+   font-size: 80%;
+   background-color: #3EA5FF;
+   border: solid #3EA5FF;
+   border-radius: 7px;
+
+}
+footer{
+   margin-right: 5%;
+   width: 95%;
+   height: 60px;
+}
+
+.iconos {
+   display: inline-block;
+   width: 50px;
+   float: right;
+   display: block;
+   margin: 10px;
+   padding: 5px;
+   box-sizing: border-box;
+
+}
