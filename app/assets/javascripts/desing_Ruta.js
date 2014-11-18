@@ -7,17 +7,17 @@ function inicio() {
     document.getElementById('recuadro').addEventListener('dragover', permitirDrop, false);        
     document.getElementById('recuadro').addEventListener('drop', drop, false);
     document.getElementById('recuadro').addEventListener('drop', drop, false);
-//    document.getElementById('foto1').addEventListener('dragend', soltar, false);   
-//    document.getElementById('foto2').addEventListener('dragend', soltar, false);  
-//    document.getElementById('foto3').addEventListener('dragend', soltar, false);                 
+//  document.getElementById('foto1').addEventListener('dragend', soltar, false);   
+//  document.getElementById('foto2').addEventListener('dragend', soltar, false);  
+//  document.getElementById('foto3').addEventListener('dragend', soltar, false);                 
 }
 
 
 function drag(ev)
 {
     ev.dataTransfer.setData("src",ev.target.id);
-    var miDiv = document.getElementById('recuadro');
-    miDiv.classList.add('cambiar');
+   // var miDiv = document.getElementById('recuadro');
+   // miDiv.classList.add('cambiar');
     console.log("drag");
 }    
 function permitirDrop(ev)
