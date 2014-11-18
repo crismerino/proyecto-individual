@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-    get 'home' => 'home#portada'
+    root 'home#portada'
     get 'registro' => 'home#registro'
     get 'desing_Ruta' => 'home#desing_Ruta'
 

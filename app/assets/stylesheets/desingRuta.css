@@ -30,32 +30,43 @@ a:active {   color:#FFFFFF; text-decoration:none;}
 nav li:hover {transition-duration: 0.5s; text-decoration: overline;}
 
 .lugares{
-   margin: 0 auto;
-   margin-top: 110px;
-   width: 95%;
-   height: 150px;
-   background-color: red;
+  margin: 0 auto;
+  margin-top: 110px;
+  width: 95%;
+  height: 150px;
+  background-color: red;
 }
-#fotos span {
-   display: inline-block;
-   width: 140px;
-   height: 140px;
-   margin: 5px;
+#fotos div {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
 }
 #recuadro {
-   margin: 0 auto;
-    width:1000px;
-    height:200px;
-    background-color:yellow;
-    border-style:solid;
-    border-color:red;
+  position: absolute;
+  margin-left: 250px;
+  width:1000px;
+  height:450px;
+  background-color:yellow;
+  border-style:solid;
+  border-color:red;
 }
 #foto1{
    background-image: url('fotitos/catedral.jpg');
+   width: 100px;
+   height: 100px;
+   position: relative;
 }
 #foto2{
    background-image: url('fotitos/alcazar.jpg');
+   width: 100px;
+   height: 100px;
+   position: relative;
 }
 #foto3{
    background-image: url('fotitos/mezquita.jpg');
+   width: 100px;
+   height: 100px;
+   position: relative;
 }
