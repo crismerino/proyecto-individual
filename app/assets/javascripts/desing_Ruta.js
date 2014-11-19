@@ -6,7 +6,10 @@ function inicio() {
     document.getElementById('foto3').addEventListener('dragstart', drag, false);              
     document.getElementById('recuadro').addEventListener('dragover', permitirDrop, false);        
     document.getElementById('recuadro').addEventListener('drop', drop, false);
-    document.getElementById('recuadro').addEventListener('drop', drop, false);
+    document.getElementById('fotos').addEventListener('dragover', permitirDrop, false);  
+    document.getElementById('fotos').addEventListener('drop', drop, false);
+
+//    document.getElementById('recuadro').addEventListener('drop', drop, false);
 //  document.getElementById('foto1').addEventListener('dragend', soltar, false);   
 //  document.getElementById('foto2').addEventListener('dragend', soltar, false);  
 //  document.getElementById('foto3').addEventListener('dragend', soltar, false);                 
