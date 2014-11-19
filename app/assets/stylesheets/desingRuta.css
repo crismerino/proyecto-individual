@@ -29,17 +29,15 @@ a:visited {   color:#FFFFFF; text-decoration:none;}
 a:active {   color:#FFFFFF; text-decoration:none;}
 nav li:hover {transition-duration: 0.5s; text-decoration: overline;}
 
+
 #fotos{
   margin: 0 auto;
   width: 90%;
-  height: 200px;
-  background-color: red;
-  display: block;
+  height: 300px;
+  background-color: #9BA3BA;
 }
 
 #fotos div {
-  width: 100px;
-  height: 100px;
   position: relative;
   display: inline-block;
   z-index: 1;
@@ -47,17 +45,24 @@ nav li:hover {transition-duration: 0.5s; text-decoration: overline;}
 }
 #recuadro {
   position: absolute;
-  margin-left: 250px;
-  width:1000px;
-  height:450px;
-  background-color:yellow;
-  border-style:solid;
-  border-color:red; 
-  display: inline-block;
-  margin-top: 20px;
+  height:420px;
+  background-color:#CED8F6; 
+  width: 80%;
+  margin-top: 30px;
+  margin-left:10%; 
 }
-#foto1 #foto2 #foto3 {
-   position: relative;display: inline-block;
-   margin: 10px;
+.titleModal{
+  font-family: 'Francois One', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px;
+  color: #3EA5FF;
+
 }
+.bodyModal{
+  font-family: 'Francois One', sans-serif;
+  font-size: 20px;
+  margin: 30px;
+}
+
 
