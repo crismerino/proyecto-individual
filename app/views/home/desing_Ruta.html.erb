@@ -1,4 +1,4 @@
-<body>
+<body class="rutePage">
 	<div class= "contenedor">
 		<nav class="barra">
 			<ul class="navegador">
@@ -7,22 +7,32 @@
 				<a href=""><li class="listas">DESCUBRE TOLEDO</li></a>
 				<a href=""><li class="listas">RUTAS</li></a>
 				<a href=""><li class="listas">GALERÍA</li></a>
-				<a href=""><li class="listas">REGISTRO</li></a>
+				<a href="/signup"><li class="listas">REGISTRO</li></a>
 			</ul>
 		</nav> 
 		<section>
 	  		<div id="fotos">
-	  			<%= image_tag 'fotitos/Catedral1.jpg', id: "foto1", datatarget:"#myModal" %>
-				<%= image_tag 'fotitos/Alcazar1.jpg', id: "foto2" %>
-				<%= image_tag 'fotitos/Mezquita1.jpg', id: "foto3" %>
-				<%= image_tag 'fotitos/Museo1.jpg', id: "foto4" %>
-				<%= image_tag 'fotitos/Sinagoga.jpg', id: "foto5" %>
-				<%= image_tag 'fotitos/Galiana1.jpg', id: "foto6" %>
-				<%= image_tag 'fotitos/Bisagra1.jpg', id: "foto7" %>
+	  			<%= image_tag 'fotitos/Catedral1.jpg', id: "foto1",  datatarget:"#myModal1", 
+	  			class: "img-rounded" %>
+				<%= image_tag 'fotitos/Alcazar1.jpg', id: "foto2", datatarget:"#myModal2", 
+				class: "img-rounded" %>
+				<%= image_tag 'fotitos/Mezquita1.jpg', id: "foto3", datatarget:"#myModal3", 
+				class: "img-rounded"%>
+				<%= image_tag 'fotitos/Museo1.jpg', id: "foto4", datatarget:"#myModal4", 
+				class: "img-rounded"%>
+				<%= image_tag 'fotitos/Sinagoga.jpg', id: "foto5", datatarget:"#myModal5", 
+				class: "img-rounded"%>
+				<%= image_tag 'fotitos/Galiana1.jpg', id: "foto6", datatarget:"#myModal6", 
+				class: "img-rounded"%>
+				<%= image_tag 'fotitos/Bisagra1.jpg', id: "foto7", datatarget:"#myModal7", 
+				class: "img-rounded"%>
   			</div>
 			<div id="recuadro"></div>
 		</section>
-
+		<section>
+			<!-- meter aqui las cajas de timepo, dinero, etc... -->
+			
+		</section>
 		<!-- Modal Catedral -->
 		<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		  <div class="modal-dialog">
@@ -33,6 +43,7 @@
 		      </div>
 		      <div class= "bodyModal">
 		        La catedral de Santa María de Toledo, (España), llamada también Catedral Primada de España, sede de la Archidiócesis de Toledo, es un edificio de arquitectura gótica, considerado por algunos como la opera magna1 del estilo gótico en España. Su construcción comenzó en 1226 bajo el reinado de Fernando III el Santo y las últimas aportaciones góticas se dieron en el siglo XV cuando en 1493 se cerraron las bóvedas de los pies de la nave central, en tiempos de los Reyes Católicos.
+		        <iframe width="500" height="315" src="//www.youtube.com/embed/KY5tijTwv44" frameborder="0" allowfullscreen></iframe>
 		      </div>
 		      <div class="modal-footer">
 		      </div>
@@ -86,7 +97,57 @@
 		    </div>
 		  </div>
 		</div>
-		<footer>
+		<!-- Modal Sinagoga -->
+		<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+		        <h4 class="titleModal" id="myModalLabel">Sinagoga del Tránsito</h4>
+		      </div>
+		      <div class= "bodyModal">
+		        La Sinagoga del Tránsito, o Sinagoga de Samuel ha-Leví, situada en la ciudad de Toledo, es un edificio del siglo XIV erigido bajo el mecenazgo de Samuel ha-Levi en tiempos del rey Pedro I. Es una sinagoga construida en estilo mudéjar en la que destaca una armadura de par y nudillo , la Gran Sala de oración ornamentada con arquillos que permiten la entrada de luz exterior y frisos policromados en yeso decorados con motivos vegetales, geométricos y epigráficos, además de motivos heráldicos de la corona de Castilla.
+		      </div>
+		      <div class="modal-footer">
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- Modal Galiana -->
+		<div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+		        <h4 class="titleModal" id="myModalLabel">Palacio de Galiana</h4>
+		      </div>
+		      <div class= "bodyModal">
+		        El edificio actual, situado en lo que tradicionalmente se llama la Huerta del Rey, se reconstruyó en el siglo XIV sobre e el palacio de recreo del rey taifa Al-Mamún.
+		        Sería un espléndido jardín botánico y finca de recreo en le siglo XI, ya que se conservan descripciones contemporáneas del lujoso palacio de verano y su alberca, en cuyo centro se levantaba un fantasioso kiosco con vidrios de colores.
+		      </div>
+		      <div class="modal-footer">
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- Modal Bisagra -->
+		<div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+		        <h4 class="titleModal" id="myModalLabel">Puerta de Bisagra</h4>
+		      </div>
+		      <div class= "bodyModal">
+		       La Puerta de Bisagra o Puerta Nueva de Bisagra es una puerta monumental situada en las murallas de la ciudad española de Toledo, Castilla-La Mancha. Es conocida con el título de «Nueva» debido a que existe otra puerta en las inmediaciones —de menor tamaño— llamada Puerta Antigua de Bisagra o Puerta de Alfonso VI. Su nombre musulmán era bab al Shaqra.
+		      </div>
+		      <div class="modal-footer">
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<footer class="siluet">
+			<!--<%= image_tag 'silueta_toledo.png' %> -->
 		</footer>	
 	</div>
 </body>
