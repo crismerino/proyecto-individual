@@ -1,28 +1,7 @@
-== README
+Página web dedicada al turismo en la ciudad de Toledo.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+El usuario planifica lo que quiere ver dependiendo del tiempo que permanezca en la ciudad y lo que le apetezca hacer. No es una página para vender packs de turismo sino un “diseña tu propia ruta”. Aunque la web contará con una serie de rutas ya establecidas, el usuario tendrá la posibilidad de diseñar la suya propia, eligiendo una serie de características y lugares a visitar hasta construir su propio itinerario. Mediante este sistema, además de añadir lugares a visitar, se sumará el tiempo estimado que le conllevará su ruta y otros datos a tener en cuenta como puede ser el precio (si se trata de exposiciones, visitas con entrada o necesidad de transporte público), etc.
 
-Things you may want to cover:
+Los lugares a visitar se presentarán localizados en un mapa para que el usuario tenga de un vistazo el recorrido a realizar.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Los usuarios tendrán la posibilidad de descargarse su ruta personalizada además de información adicional que podrán usar en la visita a la ciudad. Además, la web tendrá un apartado dedicado a la historia de la ciudad y un foro donde los usuarios dejarán su opinión sobre la capital de la Mancha.
