@@ -8,3 +8,8 @@
 	top: 5%;
 	transform: translateY(50%);
 }
+.centrar-vertical3{
+  position: relative;
+  top: 5%;
+  transform: translateY(5%);
+}
