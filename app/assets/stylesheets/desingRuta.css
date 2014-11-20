@@ -12,7 +12,7 @@
    font-family: 'Francois One', sans-serif;
    font-weight: bold;
    color: white;
-   margin-bottom: 20px;
+   margin-bottom: 30px;
 }
 .navegador{
    margin-top: 5px;
@@ -63,4 +63,27 @@ nav li:hover {transition-duration: 0.5s; text-decoration: overline;}
   font-size: 20px;
   margin: 30px;
   background-image: url("silueta_toledo-peq.png");
+}
+.boxes{
+  font-family: 'Francois One', sans-serif;
+  display: block;
+  position: relative;
+  width: 20%;
+  height: 120px;
+  background-color: yellow;
+  margin-top: 20%;
+  float: right;
+  margin-right: 8%;
+}
+.time{
+  margin: 2%;
+  width: 96%;
+  height: 50px;
+  background-color: white;
+}
+.money{
+  margin: 2%;
+  width: 96%;
+  height: 50px;
+  background-color: white;
 }
