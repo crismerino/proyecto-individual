@@ -9,8 +9,9 @@
   font-size: 20px;
 }
 .titulo_rutas{
-  margin-left: 335px;
-  font-size: 30px;
+  text-align: center;
+  font-size: 40px;
   margin-top: 25px;
   margin-bottom: 25px;
+  text-shadow: 0 0 20px grey;
 }
