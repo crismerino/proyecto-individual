@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
     root 'home#portada'
-    get 'registro' => 'home#registro'
     get 'desing_Ruta' => 'routes#index'
-    get '/users/:id', to: 'users#show'
+    get 'galeria' => 'routes#galeria'
+    get 'rutas' => 'routes#rutas_establecidas'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

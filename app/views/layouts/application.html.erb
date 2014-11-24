@@ -3,20 +3,23 @@
 <head>
   <title>ToledoRuta</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', defer: :true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
   <div class= "contenedor">
-  	<nav class="barra">
-  		<ul class="navegador centrar-vertical3">
-        <a href="/"><li>HOME</li></a>
-  			<a href="/desing_Ruta"><li>DISEÑA TU RUTA</li></a>
-  			<a href=""><li>DESCUBRE TOLEDO</li></a>
-  			<a href=""><li>RUTAS</li></a>
-  			<a href=""><li>GALERÍA</li></a>
-  		</ul>
-  	</nav>
+    <div class="centradoBarra">
+      <div class="navbar navbar-inverse">
+        <div class="navbar-inner">
+          <a class="brand" href="/">Toledo en Ruta</a>
+          <ul class="nav pull-right">
+            <li><a href="/desing_Ruta">DISEÑA TU RUTA</a></li>
+            <li><a href="/rutas">RUTAS</a></li>
+            <li><a href="/galeria">GALERIA</a></li>
+          </ul>
+        </div>
+      </div>
+  </div>
 
     <%= yield %>
 

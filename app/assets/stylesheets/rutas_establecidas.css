@@ -1,0 +1,16 @@
+.caja{
+  width: 80%;
+  margin: 0 auto;
+}
+.texto{
+  font-family: 'Francois One', sans-serif;
+}
+.title{
+  font-size: 20px;
+}
+.titulo_rutas{
+  margin-left: 335px;
+  font-size: 30px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}

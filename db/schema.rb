@@ -11,6 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141120163129) do
+ActiveRecord::Schema.define(version: 20141120140746) do
+
+  create_table "monumentos", force: true do |t|
+    t.string   "nombre"
+    t.text     "descripcion"
+    t.integer  "precio_entrada"
+    t.integer  "tiempo_visita"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "imagen"
+  end
 
 end

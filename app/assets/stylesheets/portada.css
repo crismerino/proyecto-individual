@@ -8,7 +8,6 @@
 .contenedor {
    width: 100%;
    max-width: 1600px;
-   height: 800px;
    overflow: hidden;
    margin: 0 auto;
 }
@@ -70,10 +69,8 @@ button{
    border-radius: 7px;
 
 }
-.fin{
-   margin: 0 auto;
-   width: 14%;
-
+.cajaIconos{
+   margin-top: 3%;
 }
 .iconos {
    margin: 0 auto;

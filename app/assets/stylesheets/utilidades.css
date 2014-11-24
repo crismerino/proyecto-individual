@@ -1,3 +1,15 @@
+.contenedor {
+   width: 100%;
+   max-width: 1600px;
+   overflow: hidden;
+   margin: 0 auto;
+}
+
+a:link {   text-decoration:none; color:#FFFFFF;}
+a:visited {   color:#FFFFFF; text-decoration:none;}
+a:active {   color:#FFFFFF; text-decoration:none;}
+nav li:hover {transition-duration: 0.5s; text-decoration: overline;}
+
 .centrar-vertical{
 	position: relative;
 	top: 10%;
@@ -12,4 +24,9 @@
   position: relative;
   top: 5%;
   transform: translateY(5%);
+}
+.centradoBarra{
+  width: 98%;
+  margin: 0 auto; 
+  font-family: 'Francois One', sans-serif;
 }
