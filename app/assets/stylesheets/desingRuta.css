@@ -12,8 +12,6 @@
 }
 .fotos div {
   display: inline-block;
-  z-index: 1;
-  margin: 8px;
 }
 .recuadro {
   margin: 0 auto;
@@ -23,10 +21,17 @@
   width: 80%;
   margin-top: 2%;
 }
+.modal.fade{
+  z-index: -1;
+}
+.modal.fade.in{
+  z-index: 1050;
+}
 .titleModal{
   font-family: 'Francois One', sans-serif;
   font-size: 25px;
   font-weight: bold;
+  width: 100%;
   margin: 10px;
   color: #3EA5FF;
 }
@@ -34,7 +39,6 @@
   font-family: 'Francois One', sans-serif;
   font-size: 20px;
   margin: 30px;
-  background-image: url("silueta_toledo-peq.png");
 }
 .boxes{
   font-family: 'Francois One', sans-serif;

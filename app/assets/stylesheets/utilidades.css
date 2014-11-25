@@ -16,6 +16,7 @@ nav li:hover {transition-duration: 0.5s; text-decoration: overline;}
 	transform:translateY(50%);
 }
 .centrar-vertical2{
+  margin-top: 3%;
 	position: relative;
 	top: 5%;
 	transform: translateY(50%);

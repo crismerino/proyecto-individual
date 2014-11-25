@@ -1,8 +1,8 @@
 <section>
   <div class="fotos">
-    <% @monumentos.each do |monumento| %>
-      <%= image_tag monumento.imagen %>
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <% @monumentos.each_with_index do |monumento, index| %>
+      <%= image_tag monumento.imagen, { id: "img#{index}", "data-toggle" => "modal", "data-target" => "#myModal#{index}",  "data-time" => monumento.tiempo_visita, "data-price" => monumento.precio_entrada } %>
+      <div class="modal fade" id="myModal<%= index %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -11,8 +11,8 @@
             </div>
             <div class= "bodyModal">
               <%= monumento.descripcion %>
-              <br/>Tiempo estimado de la visita: <%= monumento.tiempo_visita  %>
-              <br/>Precio: <%= monumento.precio_entrada %>
+              <br/>Tiempo estimado de la visita: <%= monumento.tiempo_visita  %> minutos
+              <br/>Precio: <%= monumento.precio_entrada %> €
             </div>
             <div class="modal-footer">
             </div>
@@ -21,12 +21,12 @@
       </div>
     <% end %>
   </div>
-  <div class="recuadro"></div>
+  <div class="recuadro" id="dropbox"></div>
 </section>
 
 <section class="boxes">
-  <div class="time">Tiempo</div>
-  <div class="money">Dinero</div>
+  <div class="time"><p id="printTime">Tiempo estimado de la visita:</p></div>
+  <div class="money"><p id="printPrice">Dinero:</p></div>
 </section>
 
 
