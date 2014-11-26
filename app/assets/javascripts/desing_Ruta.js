@@ -3,6 +3,8 @@ window.addEventListener('load', inicio, false);
 var tiempoActual = 0;
 var dineroActual = 0;
 
+
+
 function inicio() {
   var fotos = document.getElementsByClassName('fotos')[0];
   var dropbox = document.getElementById('dropbox');
@@ -15,12 +17,10 @@ function inicio() {
 
 function drag(ev){
     ev.dataTransfer.setData("src", ev.target.id);
-
     ev.dataTransfer.setData("monumentTime", ev.target.dataset.time);
     ev.dataTransfer.setData("monumentPrice", ev.target.dataset.price);
 
-    // var monumentTime = ev.target.dataset.time;
-    // console.log(monumentTime);
+    // var monumentTime = ev.target.dataset.time;   
 }
 
 function permitirDrop(ev){
@@ -29,12 +29,19 @@ function permitirDrop(ev){
 
 function drop(ev){
     ev.preventDefault();
+
     var dato=ev.dataTransfer.getData("src");
     ev.target.appendChild(document.getElementById(dato));
     var monumentTime = ev.dataTransfer.getData("monumentTime");
     var monumentPrice = ev.dataTransfer.getData("monumentPrice");
-    tiempoActual = tiempoActual + monumentTime;
-    dineroActual = dineroActual + monumentPrice;
+    //tiempoActual = tiempoActual + monumentTime;
+    tiempoActual = tiempoActual + parseInt(monumentTime, 10);
+    dineroActual = dineroActual + parseInt(monumentPrice, 10);
     document.getElementById("printTime").innerHTML = "Tiempo estimado de la visita:" + " " + tiempoActual + " " +"minutos";
     document.getElementById("printPrice").innerHTML = "Dinero:" + " " + dineroActual + "€";
 }
+
+
+
+
+
