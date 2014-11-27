@@ -1,0 +1,2 @@
+class RutasController < ApplicationController
+end

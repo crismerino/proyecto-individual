@@ -2,8 +2,11 @@ Rails.application.routes.draw do
     root 'home#portada'
     get 'desing_Ruta' => 'routes#index'
     get 'galeria' => 'routes#galeria'
-    get 'rutas' => 'routes#rutas_establecidas'
-    get 'leyendas' => 'routes#leyendas'
+    #get 'rutas' => 'routes#rutas_establecidas'
+    #get 'leyendas' => 'routes#leyendas'
+    resources :rutas do
+      resources :leyendas 
+    end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
